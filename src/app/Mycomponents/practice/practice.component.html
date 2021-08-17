@@ -1,0 +1,21 @@
+<br>
+<div class="container" >
+    <h1 id="title">{{title}}</h1>
+<div class="row">
+    <div class="col-4">
+        <input type="text" placeholder="Add todo" class="form-control" #task>
+    </div>
+    <div class="col-2">
+        <button (click)="addtodo(task.value)" class="btn btn-success "> ADD </button>
+    </div>
+    <div class="list">
+        <ul *ngFor="let item of list">
+            <li> {{item.name}} <button class="btn btn-danger" (click)="deletetodo(item.id)">DELETE</button></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+
+
